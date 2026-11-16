@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools==82.0.1"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "tyrtlebot"
+version = "0.1.0"
+description = "Local-first VGC Monte Carlo regret-matching bot"
+requires-python = ">=3.14"
+dependencies = ["poke-env==0.17.0", "numpy==2.5.5"]
+[project.optional-dependencies]
+pikapro = ["pikapro==0.1.0"]
+ppo = ["pikapro==0.1.0", "torch==2.15.0"]
+
+[project.scripts]
+tyrtlebot = "src.eval.runner:main"
+[tool.setuptools.packages.find]
+include = ["src*"]
+[tool.pytest.ini_options]
+pythonpath = ["."]

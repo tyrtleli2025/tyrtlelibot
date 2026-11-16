@@ -1,0 +1,1 @@
+{"format": "gen9championsvgc2026regmc", "visibility": "closed", "series_length": 1, "seed": 20261116, "iterations": 384, "candidate_limit": 32, "games": 20, "timeout": 900, "port": 8000, "team": "teams/balance.txt"}
